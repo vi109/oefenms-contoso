@@ -1,0 +1,127 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+  background-color: #EAEEFA;
+}
+
+body {
+  font-size: 1.8rem;
+  margin: 0;
+
+}
+/* form */
+.field {
+  margin: 0.5rem;
+}
+input:valid {
+  border: 1.3px solid green;
+}
+input:invalid {
+  border: 1.5px solid red;
+}
+input {
+  border: 1px solid black;
+}
+
+
+.container {
+  padding: 0 1rem;
+  max-width: 94rem;
+  margin: 0 auto; /*horizontally center containers */
+}
+
+/* navigation */
+nav.page-nav {
+  background-color: #1d1d1d;
+  line-height: 6rem;
+  font-size: 1.7rem;
+}
+
+nav.page-nav .container {
+  display: flex;
+}
+
+nav.page-nav a{
+  display: block;
+  min-width: 9rem;
+  padding: 0 1.8rem;
+  border-right: 1px dotted #3d3d3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c3c3c3;
+  text-shadow: 0 1px 0 #000;
+}
+
+nav.page-nav a:first-child {
+  border-left: 1px dotted #3d3d3d;
+}
+
+nav.page-nav a:hover{
+  color: #e4e4e4;
+  background-color: black;
+}
+
+nav.page-nav .active{
+  color: #fff;
+  background: linear-gradient(#c95656, #8d0606);
+  background: -ms-linear-gradient(#c95656, #8d0606);
+}
+
+nav.page-nav .active:hover{
+  color: #fff;
+}
+
+/* navigation ribbon */
+nav.page-nav .active:before{
+  position: absolute;
+  top: 6rem;
+  display: block;
+  height: 0;
+  width: 0;
+  margin-left: -1.9rem;
+  border-top: 2rem solid #8d0606;
+  border-right: 6.5rem solid transparent;
+  content: "";
+}
+
+nav.page-nav .active:after{
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0;
+  margin-left: 4.3rem;
+  border-top: 2rem solid #8d0606;
+  border-left: 6.5rem solid transparent;
+  content: "";
+}
+
+
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -1px;
+  margin: 1rem 0 .25em 0;
+}
+
+/* triangle top left*/
+
+#triangle-top-left {
+  width: 0;
+ height: 0;
+ border-top: 200px solid blue;
+ border-right: 200px solid transparent;
+}
+
+#triangle-top-right {
+  width: 0;
+  height: 0;
+  border-top: 200px solid green;
+  border-left: 200px solid transparent;
+}
+
+.triangles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
